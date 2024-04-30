@@ -1,0 +1,129 @@
+.background-container {
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    background-image: url("../images/fot.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+       .image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 970px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+      background-image: url("../images/mooney.jpg"); /* Relative path to the image */
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+/* Button Styles */
+.fancy-button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s; /* Smooth transition */
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    position: absolute;
+    top: calc(50% + 150px); /* Adjusted top position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+/* Button hover effect */
+.fancy-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Button Pressed effect */
+.fancy-button:active {
+    background-color: #3e8e41;
+}
+
+/* Container Styles */
+.container {
+    background-color: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white; /* Text color */
+    width: auto; /* Auto-adjust width based on content */
+    margin: 0 auto;
+    text-align: center; /* Center-align the text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.background-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/fot.jpg"); /* Relative path to the image */
+    background-size: cover;
+    background-position: center;
+}
+
+.gold-text {
+    color: gold;
+}
+
+        h1 {
+    text-align: center;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    color: #333; /* Change the color if necessary */
+    font-family: 'Montserrat', sans-serif; /* Use a custom font if available */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Adjust letter spacing for emphasis */
+    margin-top: 50px; /* Add margin to separate it from other elements */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }

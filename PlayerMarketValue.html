@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Choose player's Attribute skills below</title>
+´
+    <style>
+
+    </style>
+</head>
+<body class="background-container">
+
+<div class="container">
+    <h2>Choose player's Attribute skills: <br>(AI MODEL)</h2>
+    <form action="/predict" method="post">
+        <label for="name">Name: <span id="NameValue"></span></label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="image" style="display: inline-block; margin-bottom: 10px;">(OPTIONAL) Image:</label>
+        <input type="file" id="image" name="image" accept="image/jpeg, image/png" style="display: inline-block;">
+
+        <br>
+
+
+        <label for="age">Age: <span id="ageValue">50</span></label>
+        <input type="range" id="age" name="age" min="0" max="100" value="50"
+               oninput="document.getElementById('ageValue').textContent = this.value" required>
+
+        <label for="vision">Vision / Game sense: <span id="visionValue">50</span></label>
+        <input type="range" id="vision" name="vision" min="0" max="100" value="50"
+               oninput="document.getElementById('visionValue').textContent = this.value" required>
+
+        <label for="dribbling">Dribbling / Reflexes: <span id="dribblingValue">50</span></label>
+        <input type="range" id="dribbling" name="dribbling" min="0" max="100" value="50"
+               oninput="document.getElementById('dribblingValue').textContent = this.value" required>
+
+        <label for="passing">Passing / Kicking: <span id="passingValue">50</span></label>
+        <input type="range" id="passing" name="passing" min="0" max="100" value="50"
+               oninput="document.getElementById('passingValue').textContent = this.value" required>
+
+        <label for="shooting">Shooting / Handling: <span id="shootingValue">50</span></label>
+        <input type="range" id="shooting" name="shooting" min="0" max="100" value="50"
+               oninput="document.getElementById('shootingValue').textContent = this.value" required>
+
+        <label for="reputation">International Reputation: <span id="reputationValue">2</span></label>
+        <input type="range" id="reputation" name="reputation" min="0" max="5" value="2"
+               oninput="document.getElementById('reputationValue').textContent = this.value" required>
+
+        <label for="mentality">Total Mentality: <span id="mentalityValue">50</span></label>
+        <input type="range" id="mentality" name="mentality" min="0" max="100" value="50"
+               oninput="document.getElementById('mentalityValue').textContent = this.value" required>
+
+        <label for="shotPower">Shot Power: <span id="shotPowerValue">50</span></label>
+        <input type="range" id="shotPower" name="shotPower" min="0" max="100" value="50"
+               oninput="document.getElementById('shotPowerValue').textContent = this.value" required>
+
+        <label for="totalPower">Total Power: <span id="totalPowerValue">50</span></label>
+        <input type="range" id="totalPower" name="totalPower" min="0" max="100" value="50"
+               oninput="document.getElementById('totalPowerValue').textContent = this.value" required>
+
+        <label for="ballcontroll">Ball Control: <span id="ballControlValue">50</span></label>
+        <input type="range" id="ballcontroll" name="ballcontroll" min="0" max="100" value="50"
+               oninput="document.getElementById('ballControlValue').textContent = this.value" required>
+
+
+        <label for="finishing">Finishing: <span id="finishingid">50</span></label>
+        <input type="range" id="finishing" name="finishing" min="0" max="100" value="50"
+               oninput="document.getElementById('finishingid').textContent = this.value" required>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+</body>
+</html>

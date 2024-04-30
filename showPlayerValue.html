@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Flask App with Background Image</title>
+    <style>
+
+
+
+    </style>
+</head>
+<body class="background-container">>
+
+
+
+    <div class="image-container ">
+        <div class="container">
+            {% if prediction %}
+            <p>
+            <h1> Market value for player '{{name}}' is: <br> {{ prediction }} <span class="gold-text">(€)</span> <br></h1></p>
+            {% endif %}
+        </div>
+
+
+    </div>
+    <div class="container">
+        <!-- Other content here -->
+        <button class="fancy-button" type="button" onclick="window.location.href = '{{ url_for('predict_again') }}' ; ">
+            Predict Another Player Value
+        </button>
+    </div>
+
+
+</body>
+</html>
